@@ -1,0 +1,28 @@
+{
+  "name": "video-subtitles-ocr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "up": "docker-compose up --build",
+    "build": "docker-compose build",
+    "bash": "docker-compose run app bash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/video-subtitles-ocr.git"
+  },
+  "keywords": [
+    "Machine Learning"
+  ],
+  "author": "Pulipuli Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pulipulichen/video-subtitles-ocr"
+  },
+  "homepage": "https://github.com/pulipulichen/video-subtitles-ocr#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

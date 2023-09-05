@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+  app:
+    # image: quay.io/remram44/taguette
+    build: .
+    # command: ["server", "/config.py"]
+    #ports: ["127.0.0.1:7465:7465"]
+    #tty: true
+    volumes:
+      - "./video-subtitles-ocr.py:/video-subtitles-ocr.py"
+      - "./input:/input"
+      - "./output:/output"
+      - "./tessdata:/tessdata"
+      

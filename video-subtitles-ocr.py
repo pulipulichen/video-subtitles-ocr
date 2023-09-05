@@ -26,7 +26,7 @@ tessdata_dir = './tessdata/'
 tessdata_url = 'https://ghproxy.com/https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/{}.traineddata'
 
 # 语言： 中+英
-lang = 'chi_sim+eng'
+lang = 'chi_tra+chi_sim+eng'
 for lang_name in lang.split('+'):
     download_tessdata(tessdata_url.format(lang_name), tessdata_dir)
 
@@ -34,7 +34,7 @@ for lang_name in lang.split('+'):
 # 1. 读取视频
 import cv2
 
-video_path = 'd7.mp4'
+video_path = '/input/input.mp4'
 
 v = cv2.VideoCapture(video_path)
 num_frames = int(v.get(cv2.CAP_PROP_FRAME_COUNT))
