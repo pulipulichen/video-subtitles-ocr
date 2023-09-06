@@ -1,10 +1,7 @@
-FROM python:3.9.18-slim-bullseye
+FROM breezedeus/cnocr:v2.2
 
-RUN pip install --upgrade pip
-RUN pip install python-opencv
-RUN pip install pytesseract
-RUN pip install scikit-image
-#RUN scoop install tesseract
-RUN apt install tesseract-ocr -y
+CMD ["python", "/script/main.py"]
 
-CMD ["python", "/video-subtitles-ocr.py"]
+RUN pip install moviepy
+RUN pip install Pillow
+RUN pip install fuzzywuzzy

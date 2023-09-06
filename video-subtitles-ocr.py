@@ -30,6 +30,8 @@ lang = 'chi_tra+chi_sim+eng'
 for lang_name in lang.split('+'):
     download_tessdata(tessdata_url.format(lang_name), tessdata_dir)
 
+
+print('Downloading')
 # %%
 # 1. 读取视频
 import cv2
