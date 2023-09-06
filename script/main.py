@@ -27,7 +27,7 @@ from cnocr import CnOcr
 
 import re
 #img_fp = './docs/examples/fanti.jpg'
-ocr = CnOcr(rec_model_name='chinese_cht_PP-OCRv3')  # 识别模型使用繁体识别模型
+ocr = CnOcr(rec_model_name='db_mobilenet_v3')  # 识别模型使用繁体识别模型
 
 
 # Initialize variables for subtitle numbering and start time
